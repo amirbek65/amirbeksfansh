@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Для Шахины</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader"><span>Ш</span>
+        <p>Открываем маленький мир…</p>
+    </div>
+    <div id="progress"></div>
+    <div id="cursor" aria-hidden="true"></div>
+
+    <header class="nav">
+        <a href="#hero" class="logo">Шахина</a>
+        <button id="burger" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
+        <nav id="menu">
+            <a href="#letter">Послание</a><a href="#reasons">Причины</a><a href="#universe">Вселенная</a>
+            <a href="#words">Слова</a><a href="#light">Свет</a><a href="#time">Время</a>
+            <a href="#surprises">Сюрпризы</a><a href="#wish">Желание</a><a href="#finale">Финал</a>
+        </nav>
+    </header>
+    <button id="toTop" class="fab" aria-label="Наверх">↑</button>
+
+    <main>
+        <section id="hero" class="s-hero">
+            <canvas class="fx" data-fx="hearts"></canvas>
+            <div class="hero-in">
+                <p class="small">Здесь живёт одно имя</p>
+                <h1><span>Для самой особенной</span><span>на свете —</span><em data-parallax="0.15">Шахины</em></h1>
+                <a class="btn" href="#letter">Открыть мой маленький мир</a>
+            </div>
+        </section>
+
+        <section id="letter" class="s-letter">
+            <article class="paper reveal">
+                <h2>Дорогая Шахина,</h2>
+                <p class="line">Я долго искал слова, и каждое казалось слишком маленьким для тебя.</p>
+                <p class="line">Рядом с тобой даже обычный день становится светлее, а тишина — уютнее.</p>
+                <p class="line">Ты умеешь одним взглядом сказать то, на что у других уходят страницы.</p>
+                <p class="line">Этот сайт — моя попытка собрать для тебя немного тепла в одном месте.</p>
+                <p class="line">Пусть он напомнит тебе, как много в тебе красоты.</p>
+                <p class="sign line">С любовью, твой…</p>
+            </article>
+        </section>
+
+        <section id="reasons" class="s-reasons">
+            <h2 class="reveal">Почему ты особенная</h2>
+            <p class="sub reveal">Нажми на карточку — внутри спрятано продолжение.</p>
+            <div class="reasons">
+                <button class="rc reveal" aria-expanded="false"><b>Твоя улыбка</b><span>Она делает комнату теплее, а день — добрее. Её невозможно не заметить.</span></button>
+                <button class="rc reveal" aria-expanded="false"><b>Твоя доброта</b><span>Ты умеешь поддержать так, что становится легче дышать.</span></button>
+                <button class="rc reveal" aria-expanded="false"><b>Твой голос</b><span>В нём есть мягкость, от которой хочется слушать ещё и ещё.</span></button>
+                <button class="rc reveal" aria-expanded="false"><b>Твоя сила</b><span>За нежностью скрывается характер, которым нельзя не восхищаться.</span></button>
+                <button class="rc reveal" aria-expanded="false"><b>Твой взгляд</b><span>В нём целая история, которую хочется читать бесконечно.</span></button>
+                <button class="rc reveal" aria-expanded="false"><b>Просто ты</b><span>Самая главная причина — то, что ты есть именно такая, какая есть.</span></button>
+            </div>
+        </section>
+
+        <section id="universe" class="s-universe">
+            <canvas id="uni" aria-hidden="true"></canvas>
+            <div class="uni-name">
+                <p class="small">В центре всего</p>
+                <h2>Шахина</h2>
+                <p class="sub">Проведи курсором или пальцем по звёздам — они сложатся в созвездие.</p>
+            </div>
+        </section>
+
+        <section id="words" class="s-words">
+            <h2 class="reveal">Слова, которые хочется сказать</h2>
+            <blockquote id="phrase" aria-live="polite">Нажми на кнопку — и я скажу тебе что-нибудь тёплое.</blockquote>
+            <button class="btn dark" id="morePhrase">Ещё одно послание</button>
+        </section>
+
+        <section id="light" class="s-gallery">
+            <h2 class="reveal">Свет для тебя</h2>
+            <p class="sub reveal">Шесть маленьких огней. Нажми на любой — он разгорится на весь экран.</p>
+            <div class="grid">
+                <figure class="ph reveal tall" tabindex="0">
+                    <div class="glow g1"><b>Рассвет</b></div>
+                </figure>
+                <figure class="ph reveal" tabindex="0">
+                    <div class="glow g2"><b>Тёплые огни</b></div>
+                </figure>
+                <figure class="ph reveal wide" tabindex="0">
+                    <div class="glow g3"><b>Нежное сияние</b></div>
+                </figure>
+                <figure class="ph reveal" tabindex="0">
+                    <div class="glow g4"><b>Шёлк</b></div>
+                </figure>
+                <figure class="ph reveal tall" tabindex="0">
+                    <div class="glow g5"><b>Звёздная пыль</b></div>
+                </figure>
+                <figure class="ph reveal" tabindex="0">
+                    <div class="glow g6"><b>Тихое дыхание</b></div>
+                </figure>
+            </div>
+        </section>
+
+        <section id="time" class="s-time">
+            <h2 class="reveal">Время для тебя</h2>
+            <p class="sub">Укажи дату знакомства или другого важного события.</p>
+            <div class="setter"><label for="when" class="sr">Дата события</label><input type="datetime-local" id="when"><button class="btn" id="startTimer">Начать отсчёт</button></div>
+            <div class="clock" id="clock" hidden>
+                <div><b id="d">0</b><span>дней</span></div>
+                <div><b id="h">0</b><span>часов</span></div>
+                <div><b id="m">0</b><span>минут</span></div>
+                <div><b id="s">0</b><span>секунд</span></div>
+            </div>
+            <p class="sub" id="timeNote"></p>
+        </section>
+
+        <section id="surprises" class="s-surp">
+            <h2 class="reveal">Маленькие сюрпризы</h2>
+            <div class="surp">
+                <div class="card"><button class="btn dark" id="secretBtn">Секретное послание</button>
+                    <p id="secret" class="hid">Ты — причина, по которой я улыбаюсь без повода.</p>
+                </div>
+                <div class="card"><button class="env" id="env" aria-label="Открыть конверт"><span class="flap"></span><span class="note">Ты красивее любого рассвета.</span></button><small>Нажми на конверт</small></div>
+                <div class="card"><button class="gift" id="gift" aria-label="Открыть коробку"><span class="lid"></span><span class="box"></span></button><small>Нажми на коробку</small></div>
+            </div>
+        </section>
+
+        <section id="wish" class="s-wish">
+            <h2 class="reveal">Загадай желание</h2>
+            <p class="sub reveal">Нажми на ночное небо — по нему пролетит звезда.</p>
+            <div class="sky" id="sky" role="button" tabindex="0" aria-label="Запустить падающую звезду">
+                <p id="wishText" aria-live="polite">Небо ждёт твоего желания…</p>
+            </div>
+        </section>
+
+        <section id="finale" class="s-finale">
+            <canvas class="fx" data-fx="sparks"></canvas>
+            <div class="fin-in">
+                <h2>Шахина, ты — особенная часть моего мира</h2><button class="btn" id="finBtn">Подарить тебе звёзды</button></div>
+        </section>
+    </main>
+
+    <div id="lb" hidden role="dialog" aria-modal="true" aria-label="Просмотр огня"><button id="lbClose" aria-label="Закрыть">✕</button>
+        <div id="lbBody"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
